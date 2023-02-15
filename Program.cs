@@ -17,3 +17,11 @@ for (int i = 0; i < size; i++)
 string[] arrayElements = new string[size];
 int length = 3;
 int position = 0;
+for (int e = 0; e < size; e++)
+{
+    if (arrayStrings[e].Length <= length)
+    {
+        arrayElements[position] = arrayStrings[e];
+        position++;
+    }
+}
