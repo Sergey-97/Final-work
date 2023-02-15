@@ -14,3 +14,6 @@ for (int i = 0; i < size; i++)
     string element = Convert.ToString(Console.ReadLine())!;
     arrayStrings[i] = element;
 }
+string[] arrayElements = new string[size];
+int length = 3;
+int position = 0;
