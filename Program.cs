@@ -11,7 +11,7 @@ int size = Convert.ToInt32(Console.ReadLine());
 string[] arrayStrings = new string[size];
 for (int i = 0; i < size; i++)
 {
-    Console.WriteLine($"Введите {i+1}-й элемент: ");
+    Console.WriteLine($"Введите {i + 1}-й элемент: ");
     string element = Convert.ToString(Console.ReadLine())!;
     arrayStrings[i] = element;
 }
@@ -36,8 +36,8 @@ void PrintArray(string[] array)
     for (int i = 0; i < array.Length; i++)
     {
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
-        Console.WriteLine($"{i+1}-й элемент: соответствие требованиям -> [{array[i]}]");
-}
+        Console.WriteLine($"{i + 1}-й элемент: соответствие требованиям -> [{array[i]}]");
+    }
     Console.WriteLine();
     Console.ResetColor();
 }
