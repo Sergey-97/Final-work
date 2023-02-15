@@ -4,6 +4,7 @@
 либо задать на старте выполнения алгоритма. 
 При решение не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.*/
 
+Console.ForegroundColor = ConsoleColor.Green;
 Console.Write("Введите количество элементов ");
 int size = Convert.ToInt32(Console.ReadLine());
 
@@ -17,6 +18,7 @@ for (int i = 0; i < size; i++)
 string[] arrayElements = new string[size];
 int length = 3;
 int position = 0;
+
 for (int e = 0; e < size; e++)
 {
     if (arrayStrings[e].Length <= length)
@@ -27,12 +29,15 @@ for (int e = 0; e < size; e++)
 }
 Console.WriteLine();
 PrintArray(arrayElements);
+Console.ResetColor();
 
 void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
         Console.WriteLine($"{i+1}-й элемент: соответствие требованиям -> [{array[i]}]");
 }
     Console.WriteLine();
+    Console.ResetColor();
 }
